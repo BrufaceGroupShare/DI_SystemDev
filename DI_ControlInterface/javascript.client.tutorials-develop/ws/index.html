@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>PC Control Interface Demo</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/dev.css">
+	<link rel="stylesheet" href="css/demo.css">
+
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script src="node_modules/npm-modernizr/modernizr.js"></script>
+</head>
+<body>
+
+<div class="header-container">
+	<header class="wrapper clearfix">
+		
+	</header>
+</div>
+
+
+
+
+<div class="main-container ">
+	<div class="main wrapper clearfix">
+
+		<div class="powered-wrapper">
+			<div class="powered-header"></div>
+		</div>
+
+		<!-- End header -->
+
+		<article>
+
+			<section class="demo">
+
+				<!--  Kaazing scripts -->
+				<script type="text/javascript" language="javascript"
+						src="node_modules/kaazing-javascript-gateway-client/WebSocket.js"></script>
+
+				<script type="text/javascript" language="javascript" src="js/ws.js"></script>
+				<div id="echo">
+
+					<h1>PC Control Interface Demo</h1>
+
+					<p>Websoket - Kaazing Gateway Echo Service</p>
+					<div id="location-div" class="clearfix">
+						<div class="form-labels">
+							<label>Location</label>
+						</div>
+						<div class="form-fields">
+							<input id="wsurl" size="40">
+							<button id="connect">Connect</button>
+							<button id="close">Close</button>
+						</div>
+
+					</div> <!-- location-div -->
+					
+								
+					<!-- Comment -->
+										
+					
+					<div class="headsetinterface">
+						<!-- Comment 
+						<img id="The Headset" src="images/TheHeadset.jpg" width="500" height="300">-->
+						<div class="headsetimage">
+							<img id="The Headset" src="images/TheHeadset.jpg" width="500" height="300">
+						</div>
+						
+						<div class="lclv1control">
+							<input id="slide1" type="range" min="0" max="4" step="1" value="2" list="steplist">
+							<datalist id="steplist">
+								<option>0</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+							</datalist>
+							<div id="sliderAmount1"></div>
+						</div>
+						
+						<div class="lclv2control">
+							<input id="slide2" type="range" min="0" max="4" step="1" value="2" list="steplist">
+							<datalist id="steplist">
+								<option>0</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+							</datalist>
+							<div id="sliderAmount2"></div>
+						</div>
+						
+						<div class="lclv3control">
+							<input id="slide3" type="range" min="0" max="4" step="1" value="2" list="steplist">
+							<datalist id="steplist">
+								<option>0</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+							</datalist>
+							<div id="sliderAmount3"></div>
+						</div>
+						
+						<div class="supercontrol">
+							<input id="slide4" type="range" min="0" max="4" step="1" value="2" list="steplist">
+						
+							<datalist id="steplist">
+								<option>0</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+							</datalist>
+							<div id="sliderAmount4"></div>
+						</div>
+						
+						<div class="overlayObject" id="overlay">
+							
+						</div>
+						<div class="object" id="object">
+							<img id="Object" src="images/Object.jpg" width="150" height="150">
+						</div>
+						
+					</div>
+					
+					
+							
+					
+
+					<div id="console-div">
+						Log messages
+						<div id="consoleLog"></div>
+						<button id="clear">Clear Log</button>
+					</div>
+					
+								
+					
+					
+
+				</div> <!-- #echo -->
+
+			</section>
+
+		</article>
+
+		<!-- Start footer -->
+
+	</div> <!-- #main -->
+</div> <!-- #main-container -->
+
+
+
+<div class="footer-container">
+	<footer class="wrapper">
+		
+		
+	</footer>
+</div>
+</body>
+</html>
